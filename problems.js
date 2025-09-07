@@ -146,6 +146,36 @@ function countConsonants(word) {
     return count;
 }
 
+function returnSevens(max) {
+    const sevens = [];
+    for (let i = 0; i < max; i++) {
+        if (i % 7 === 0) {
+            sevens.push(i);
+        }
+    }
+    return sevens;
+}
+
+function plusTen(num) {
+    return num + 10;
+}
+
+function bothStringsIncluded(sentence, word1, word2) {
+    return sentence.includes(word1) && sentence.includes(word2);
+}
+
+function productArray(arr) {
+    let product = 1;
+    for (let i = 0; i < arr.length; i++) {
+        product *= arr[i];
+    }
+    return product;
+}
+
+function fiveAndEleven(num) {
+    return num % 5 === 0 && num % 11 === 0;
+}
+
 // Do not change the code below this line.
 
 
