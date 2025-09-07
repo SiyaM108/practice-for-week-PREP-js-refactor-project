@@ -134,6 +134,17 @@ function alternatingLetters(str) {
     return result;
 }
 
+function countConsonants(word) {
+    const vowels = ["a", "e", "i", "o", "u"];
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+        const char = word[i].toLowerCase();
+        if (char >= 'a' && char <= 'z' && !vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
 
 // Do not change the code below this line.
 
